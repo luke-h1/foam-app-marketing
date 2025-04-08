@@ -44,7 +44,8 @@ export default function Home() {
           >
             Built by luke-h1
           </Link>{" "}
-          • Follow us for updates!
+          • Follow us for updates!{" "}
+          <Link href="/privacy-policy">Privacy Policy</Link>
         </p>
       </footer>
     </div>
