@@ -1,17 +1,38 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: #003673;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: #003673;
+  }
+
+  a {
+    color: #006dce;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
-a {
-  color: #006dce;
-  text-decoration: none;
-}
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-400 via-purple-400 to-blue-600 bg-clip-text text-transparent;
+  }
 
-* {
-  box-sizing: border-box;
+  .glow-hover {
+    @apply relative;
+  }
+
+  .glow-hover:hover::before {
+    content: "";
+    @apply absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 opacity-20 blur-xl;
+  }
 }
