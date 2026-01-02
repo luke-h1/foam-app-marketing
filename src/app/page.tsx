@@ -30,7 +30,7 @@ export default function Home() {
         <footer className="absolute bottom-0 left-0 right-0 py-8">
           <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
             <Link
-              href="https://github.com/luke-h1"
+              href="https://github.com/luke-h1/foam"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
