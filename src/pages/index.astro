@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="FOAM">
+  <div class="min-h-screen bg-black text-white relative overflow-hidden">
+    <div class="fixed inset-0 opacity-20 pointer-events-none">
+      <div
+        class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500 rounded-full blur-[120px] animate-pulse"
+      >
+      </div>
+      <div
+        class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500 rounded-full blur-[120px] animate-pulse"
+        style="animation-delay: 1s;"
+      >
+      </div>
+    </div>
+
+    <div
+      class="relative min-h-screen flex flex-col items-center justify-center px-6"
+    >
+      <div class="max-w-4xl w-full text-center">
+        <h1
+          class="text-5xl sm:text-6xl md:text-7xl font-black mb-8 tracking-tight"
+        >
+          <span
+            class="bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient"
+          >
+            FOAM
+          </span>
+        </h1>
+
+        <p class="text-xl sm:text-2xl text-gray-400 mb-16 font-light tracking-wide">
+          Custom Twitch client for IOS & Android
+        </p>
+
+        <div class="space-y-8 text-lg text-gray-500 max-w-xl mx-auto">
+          <p>Coming soon</p>
+        </div>
+      </div>
+      <footer class="absolute bottom-0 left-0 right-0 py-8">
+        <div
+          class="flex items-center justify-center gap-6 text-sm text-gray-600"
+        >
+          <a
+            href="https://github.com/luke-h1/foam"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-white transition-colors"
+          >
+            GitHub
+          </a>
+          <span>•</span>
+          <a href="/privacy-policy" class="hover:text-white transition-colors">
+            Privacy
+          </a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</Layout>
